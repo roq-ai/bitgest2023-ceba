@@ -1,0 +1,2672 @@
+[
+  {
+    "database_connection": [
+      {
+        "id": "4290b45a-75ad-470d-ace2-4eacbd7b8d52",
+        "host": "localhost",
+        "port": 91427,
+        "database_name": "my_database",
+        "username": "admin",
+        "password": "p@ssw0rd",
+        "created_at": "2023-08-27T20:43:40.907Z",
+        "updated_at": "2023-08-27T18:56:31.411Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "beaedd58-aa56-41ca-bbfc-ca957aaff5d2",
+        "host": "db.example.com",
+        "port": 85696,
+        "database_name": "test_db",
+        "username": "user",
+        "password": "securepassword",
+        "created_at": "2023-08-27T12:02:39.971Z",
+        "updated_at": "2023-08-27T22:14:40.859Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "545440b2-bdac-4451-8c6a-346227c81cd0",
+        "host": "123.45.67.89",
+        "port": 51905,
+        "database_name": "company_data",
+        "username": "dbadmin",
+        "password": "12345678",
+        "created_at": "2023-08-27T22:42:11.551Z",
+        "updated_at": "2023-08-27T21:59:08.410Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "7042e7b8-1a3c-485f-bf33-e59563853d5b",
+        "host": "database-server",
+        "port": 70051,
+        "database_name": "sales_db",
+        "username": "dbuser",
+        "password": "password123",
+        "created_at": "2023-08-27T21:25:03.538Z",
+        "updated_at": "2023-08-27T09:05:49.915Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "99815e53-35ea-456f-a8cb-5974b506523b",
+        "host": "mydbserver",
+        "port": 34144,
+        "database_name": "inventory_system",
+        "username": "database_admin",
+        "password": "dbpass",
+        "created_at": "2023-08-27T14:17:19.137Z",
+        "updated_at": "2023-08-27T08:14:52.912Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "table_structure": [
+      {
+        "id": "63f54ebd-2fd8-4d3e-9d71-295c3c8af70b",
+        "table_name": "users",
+        "field_name": "id",
+        "field_type": "integer",
+        "is_nullable": true,
+        "default_value": "NULL",
+        "created_at": "2023-08-27T07:55:53.839Z",
+        "updated_at": "2023-08-27T23:59:10.881Z",
+        "database_connection_id": "7042e7b8-1a3c-485f-bf33-e59563853d5b"
+      },
+      {
+        "id": "2e940527-b119-4a03-89ee-3875f331abc7",
+        "table_name": "products",
+        "field_name": "name",
+        "field_type": "string",
+        "is_nullable": false,
+        "default_value": "0",
+        "created_at": "2023-08-27T19:39:51.787Z",
+        "updated_at": "2023-08-28T01:08:47.181Z",
+        "database_connection_id": "beaedd58-aa56-41ca-bbfc-ca957aaff5d2"
+      },
+      {
+        "id": "4b9cb9f6-7aac-4b18-ba89-6034cae15770",
+        "table_name": "orders",
+        "field_name": "email",
+        "field_type": "boolean",
+        "is_nullable": true,
+        "default_value": "false",
+        "created_at": "2023-08-28T02:48:07.925Z",
+        "updated_at": "2023-08-28T06:18:37.477Z",
+        "database_connection_id": "7042e7b8-1a3c-485f-bf33-e59563853d5b"
+      },
+      {
+        "id": "bebb6f8f-80b1-4b38-a902-85e99a57384d",
+        "table_name": "customers",
+        "field_name": "phone",
+        "field_type": "date",
+        "is_nullable": true,
+        "default_value": "2021-01-01",
+        "created_at": "2023-08-27T16:40:01.189Z",
+        "updated_at": "2023-08-27T16:52:25.270Z",
+        "database_connection_id": "7042e7b8-1a3c-485f-bf33-e59563853d5b"
+      },
+      {
+        "id": "33bf676d-db32-4af1-96c9-ae2b42d832f5",
+        "table_name": "invoices",
+        "field_name": "address",
+        "field_type": "float",
+        "is_nullable": true,
+        "default_value": "0.0",
+        "created_at": "2023-08-28T01:36:49.900Z",
+        "updated_at": "2023-08-28T05:59:37.624Z",
+        "database_connection_id": "99815e53-35ea-456f-a8cb-5974b506523b"
+      }
+    ],
+    "form": [
+      {
+        "id": "b35a54cd-4d82-4817-b9a6-9d0c5e8976d5",
+        "form_type": "contact",
+        "created_at": "2023-08-27T23:28:44.916Z",
+        "updated_at": "2023-08-28T02:49:50.751Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "2e940527-b119-4a03-89ee-3875f331abc7"
+      },
+      {
+        "id": "64c6e335-d9e3-48f5-8169-caee1fb785b8",
+        "form_type": "registration",
+        "created_at": "2023-08-28T03:46:35.832Z",
+        "updated_at": "2023-08-27T09:23:28.493Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "33bf676d-db32-4af1-96c9-ae2b42d832f5"
+      },
+      {
+        "id": "70c9e80f-c107-4893-b5fb-7087b9046846",
+        "form_type": "feedback",
+        "created_at": "2023-08-27T15:59:40.885Z",
+        "updated_at": "2023-08-27T14:45:36.878Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "2e940527-b119-4a03-89ee-3875f331abc7"
+      },
+      {
+        "id": "a7206239-5c82-447a-8b69-c1c7624310d3",
+        "form_type": "subscription",
+        "created_at": "2023-08-28T06:12:00.415Z",
+        "updated_at": "2023-08-27T12:47:52.302Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "4b9cb9f6-7aac-4b18-ba89-6034cae15770"
+      },
+      {
+        "id": "26c21a29-b25b-4617-98b3-0a218e540fff",
+        "form_type": "order",
+        "created_at": "2023-08-28T02:25:46.242Z",
+        "updated_at": "2023-08-27T19:14:59.290Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "4b9cb9f6-7aac-4b18-ba89-6034cae15770"
+      }
+    ],
+    "customer": [
+      {
+        "id": "3ebcb7c5-7d31-4a22-b034-c34835beef73",
+        "first_name": "John",
+        "last_name": "Doe",
+        "address": "123 Main St",
+        "city": "New York",
+        "country": "United States",
+        "phone": "555-1234",
+        "created_at": "2023-08-27T11:03:42.531Z",
+        "updated_at": "2023-08-28T04:46:13.006Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "802326e8-5018-4ac3-8f4b-85c434c7c7a4",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "address": "456 Elm St",
+        "city": "Los Angeles",
+        "country": "Canada",
+        "phone": "555-5678",
+        "created_at": "2023-08-28T03:23:17.308Z",
+        "updated_at": "2023-08-27T12:29:52.286Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "f057b484-eb25-4686-9483-390565820e78",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "address": "789 Oak St",
+        "city": "Chicago",
+        "country": "United Kingdom",
+        "phone": "555-9012",
+        "created_at": "2023-08-28T00:11:07.364Z",
+        "updated_at": "2023-08-27T18:01:01.631Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "898aed8c-9bba-431a-889a-8fdcb94db1b3",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "address": "321 Pine St",
+        "city": "Houston",
+        "country": "Australia",
+        "phone": "555-3456",
+        "created_at": "2023-08-27T08:49:57.500Z",
+        "updated_at": "2023-08-27T22:35:41.039Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "9130fc51-d196-4394-9289-09134927d4d1",
+        "first_name": "Robert",
+        "last_name": "Wilson",
+        "address": "987 Maple St",
+        "city": "Miami",
+        "country": "Germany",
+        "phone": "555-7890",
+        "created_at": "2023-08-27T19:55:14.593Z",
+        "updated_at": "2023-08-27T18:32:41.756Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "e2d474fe-ea7e-405b-a48e-02a18942f535",
+        "email": "Ilene_Mohr@yahoo.com",
+        "firstName": "Fletcher",
+        "lastName": "Padberg",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/25358011",
+        "tenantId": null
+      },
+      {
+        "reference": "719d5eaf-287c-4deb-80cf-df0c8d3b702e",
+        "email": "Mekhi.Armstrong@gmail.com",
+        "firstName": "Tavares",
+        "lastName": "Tremblay",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1032821",
+        "tenantId": null
+      },
+      {
+        "reference": "fcf2e7c0-2455-4b64-af49-b7ecec60afee",
+        "email": "Raina80@hotmail.com",
+        "firstName": "Javonte",
+        "lastName": "Doyle",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1169.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "4a1fc080-bac9-4e9b-acf3-da2e8cea9d1d",
+        "email": "Mylene_Franecki15@yahoo.com",
+        "firstName": "Werner",
+        "lastName": "Spinka-Block",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/54021934",
+        "tenantId": null
+      },
+      {
+        "reference": "4a5304d2-1e5e-494c-a827-f532f9754ddd",
+        "email": "Lester.Lowe@hotmail.com",
+        "firstName": "Amira",
+        "lastName": "Dickinson",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1092.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "database_connection": [
+      {
+        "id": "0f9ccf32-1826-49cd-adb8-a085b6185c72",
+        "host": "localhost",
+        "port": 48322,
+        "database_name": "mydb",
+        "username": "admin",
+        "password": "pass123",
+        "created_at": "2023-08-28T04:18:13.924Z",
+        "updated_at": "2023-08-27T11:01:50.445Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "a6f78392-5801-48fe-b2c1-834ebcdcc2f1",
+        "host": "db.example.com",
+        "port": 52592,
+        "database_name": "company_db",
+        "username": "user",
+        "password": "secret",
+        "created_at": "2023-08-28T02:19:31.727Z",
+        "updated_at": "2023-08-27T07:38:53.139Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "f6866619-63ba-4347-b113-02c7022b9bcc",
+        "host": "192.168.0.1",
+        "port": 87159,
+        "database_name": "sales_db",
+        "username": "dbadmin",
+        "password": "password123",
+        "created_at": "2023-08-28T02:33:18.766Z",
+        "updated_at": "2023-08-28T02:56:10.059Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "b430e4a1-cc4c-4439-92f6-42a7063877f0",
+        "host": "dbserver01",
+        "port": 75416,
+        "database_name": "customer_db",
+        "username": "dbuser",
+        "password": "admin@123",
+        "created_at": "2023-08-27T07:24:17.100Z",
+        "updated_at": "2023-08-28T01:25:27.715Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "26be79a5-d101-432a-b4f3-dd37c5104c1c",
+        "host": "database.example.net",
+        "port": 16887,
+        "database_name": "inventory_db",
+        "username": "root",
+        "password": "dbpassword",
+        "created_at": "2023-08-27T21:42:47.501Z",
+        "updated_at": "2023-08-28T05:37:36.920Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "table_structure": [
+      {
+        "id": "5a1609ed-5723-4870-a32c-7cb23667cbe3",
+        "table_name": "users",
+        "field_name": "id",
+        "field_type": "integer",
+        "is_nullable": true,
+        "default_value": "NULL",
+        "created_at": "2023-08-28T04:17:48.693Z",
+        "updated_at": "2023-08-28T01:20:53.877Z",
+        "database_connection_id": "b430e4a1-cc4c-4439-92f6-42a7063877f0"
+      },
+      {
+        "id": "ff02123d-f718-4f36-bdf2-5af6baf7cdb4",
+        "table_name": "products",
+        "field_name": "name",
+        "field_type": "text",
+        "is_nullable": true,
+        "default_value": "0",
+        "created_at": "2023-08-27T19:34:22.371Z",
+        "updated_at": "2023-08-27T08:26:11.842Z",
+        "database_connection_id": "f6866619-63ba-4347-b113-02c7022b9bcc"
+      },
+      {
+        "id": "c11c616a-b71e-408a-a014-e6bc7017a3de",
+        "table_name": "orders",
+        "field_name": "email",
+        "field_type": "varchar",
+        "is_nullable": false,
+        "default_value": "N/A",
+        "created_at": "2023-08-27T18:14:36.270Z",
+        "updated_at": "2023-08-27T07:25:55.391Z",
+        "database_connection_id": "f6866619-63ba-4347-b113-02c7022b9bcc"
+      },
+      {
+        "id": "9543336f-b288-44f5-8973-edb60fbe63c4",
+        "table_name": "customers",
+        "field_name": "phone",
+        "field_type": "datetime",
+        "is_nullable": true,
+        "default_value": "default",
+        "created_at": "2023-08-27T17:43:53.971Z",
+        "updated_at": "2023-08-28T03:38:10.050Z",
+        "database_connection_id": "f6866619-63ba-4347-b113-02c7022b9bcc"
+      },
+      {
+        "id": "74c91a58-b667-42e5-bcb1-c1b4520a8cb6",
+        "table_name": "invoices",
+        "field_name": "address",
+        "field_type": "boolean",
+        "is_nullable": false,
+        "default_value": "none",
+        "created_at": "2023-08-28T04:02:43.125Z",
+        "updated_at": "2023-08-28T06:44:12.206Z",
+        "database_connection_id": "0f9ccf32-1826-49cd-adb8-a085b6185c72"
+      }
+    ],
+    "form": [
+      {
+        "id": "dcac77a1-90fe-4827-b2d7-9c27cd6c4663",
+        "form_type": "contact",
+        "created_at": "2023-08-27T15:11:14.464Z",
+        "updated_at": "2023-08-28T02:38:39.864Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "ff02123d-f718-4f36-bdf2-5af6baf7cdb4"
+      },
+      {
+        "id": "757f7d2f-6048-4449-b3cf-8f1f5b4b6bca",
+        "form_type": "registration",
+        "created_at": "2023-08-27T19:55:26.320Z",
+        "updated_at": "2023-08-27T07:06:53.381Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "74c91a58-b667-42e5-bcb1-c1b4520a8cb6"
+      },
+      {
+        "id": "564fdeda-98c1-4588-bbcc-d2a5287523cb",
+        "form_type": "feedback",
+        "created_at": "2023-08-27T21:08:04.564Z",
+        "updated_at": "2023-08-28T04:53:29.268Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "74c91a58-b667-42e5-bcb1-c1b4520a8cb6"
+      },
+      {
+        "id": "158f57b9-e434-4261-b82c-9502f771cd28",
+        "form_type": "survey",
+        "created_at": "2023-08-27T12:32:05.495Z",
+        "updated_at": "2023-08-27T21:05:48.183Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "c11c616a-b71e-408a-a014-e6bc7017a3de"
+      },
+      {
+        "id": "0d375dc8-ab1a-46dc-915e-ff729cf8a07e",
+        "form_type": "order",
+        "created_at": "2023-08-27T20:19:11.267Z",
+        "updated_at": "2023-08-27T22:46:33.132Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "c11c616a-b71e-408a-a014-e6bc7017a3de"
+      }
+    ],
+    "customer": [
+      {
+        "id": "8f70f122-0e69-4f7c-bacf-f00b6c69a3c7",
+        "first_name": "John",
+        "last_name": "Doe",
+        "address": "123 Main St",
+        "city": "New York",
+        "country": "United States",
+        "phone": "123-456-7890",
+        "created_at": "2023-08-27T07:12:58.015Z",
+        "updated_at": "2023-08-28T05:18:36.739Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "e844aed0-2413-405a-9e90-9348b91ef6e8",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "address": "456 Elm St",
+        "city": "Los Angeles",
+        "country": "Canada",
+        "phone": "555-555-5555",
+        "created_at": "2023-08-27T11:43:49.452Z",
+        "updated_at": "2023-08-27T20:44:31.166Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "743f8458-8765-4a14-8209-438fc5103bc0",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "address": "789 Oak St",
+        "city": "Chicago",
+        "country": "United Kingdom",
+        "phone": "987-654-3210",
+        "created_at": "2023-08-27T12:24:17.776Z",
+        "updated_at": "2023-08-27T14:23:12.934Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "68505a24-345c-4238-a19e-06271ee2130f",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "address": "321 Pine St",
+        "city": "Houston",
+        "country": "Australia",
+        "phone": "111-222-3333",
+        "created_at": "2023-08-28T01:48:57.448Z",
+        "updated_at": "2023-08-28T02:12:19.368Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "53e0fd3b-3cab-4bcd-8cc3-8f7d8a090184",
+        "first_name": "David",
+        "last_name": "Wilson",
+        "address": "654 Maple St",
+        "city": "Phoenix",
+        "country": "Germany",
+        "phone": "444-555-6666",
+        "created_at": "2023-08-27T19:09:48.173Z",
+        "updated_at": "2023-08-27T17:26:11.173Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "ac34b2b1-0e87-4122-9f62-e4bbfaf5ef1f",
+        "email": "Perry.Bruen25@hotmail.com",
+        "firstName": "Stanford",
+        "lastName": "O'Conner",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/630.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "ae2c2a2f-a6ff-4540-a98c-441b9cf4f7dc",
+        "email": "Stuart_Cummings73@yahoo.com",
+        "firstName": "Golda",
+        "lastName": "Borer",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/168.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "4cb43f3e-9701-48c3-8763-d8a6fa47e0e2",
+        "email": "Victoria90@gmail.com",
+        "firstName": "Leonie",
+        "lastName": "Hamill",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/84.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "27efc09b-1089-4370-bac7-f66333e62a11",
+        "email": "Jonathon40@yahoo.com",
+        "firstName": "Marlee",
+        "lastName": "Wilkinson-Quigley",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/635.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "7d701439-2786-48aa-b6f9-8de253d23ef3",
+        "email": "Terence44@yahoo.com",
+        "firstName": "Keara",
+        "lastName": "Steuber",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/22.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "database_connection": [
+      {
+        "id": "e37b001d-5b3a-4eab-97a0-ed4405ed21e9",
+        "host": "localhost",
+        "port": 86037,
+        "database_name": "mydb",
+        "username": "admin",
+        "password": "p@ssw0rd",
+        "created_at": "2023-08-27T22:35:00.404Z",
+        "updated_at": "2023-08-28T00:06:37.045Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "5fb1d910-fb53-4451-af60-6e057721a047",
+        "host": "127.0.0.1",
+        "port": 15437,
+        "database_name": "testdb",
+        "username": "user",
+        "password": "secret",
+        "created_at": "2023-08-27T07:15:54.887Z",
+        "updated_at": "2023-08-27T16:32:45.214Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "20b8afb0-801c-4be6-9034-5ebcbd60bc9d",
+        "host": "db.example.com",
+        "port": 65812,
+        "database_name": "companydb",
+        "username": "dbadmin",
+        "password": "admin123",
+        "created_at": "2023-08-27T11:55:15.018Z",
+        "updated_at": "2023-08-27T23:03:44.798Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "5be10516-4cbe-4bc8-8b40-4c4901fb3e5f",
+        "host": "db-server",
+        "port": 1654,
+        "database_name": "salesdb",
+        "username": "root",
+        "password": "password1",
+        "created_at": "2023-08-27T20:04:17.962Z",
+        "updated_at": "2023-08-27T11:47:06.423Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "36a5813a-60ed-4a49-981e-531722713798",
+        "host": "database-host",
+        "port": 7339,
+        "database_name": "inventorydb",
+        "username": "dbuser",
+        "password": "dbpassword",
+        "created_at": "2023-08-27T22:26:54.766Z",
+        "updated_at": "2023-08-27T08:19:04.567Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "table_structure": [
+      {
+        "id": "cd2af968-d6d5-4bfa-bfe6-37346d4cfc1f",
+        "table_name": "users",
+        "field_name": "id",
+        "field_type": "integer",
+        "is_nullable": false,
+        "default_value": "NULL",
+        "created_at": "2023-08-28T05:03:19.453Z",
+        "updated_at": "2023-08-27T18:13:39.175Z",
+        "database_connection_id": "20b8afb0-801c-4be6-9034-5ebcbd60bc9d"
+      },
+      {
+        "id": "c470a64e-810e-48de-abf3-d0381a2fde08",
+        "table_name": "products",
+        "field_name": "name",
+        "field_type": "string",
+        "is_nullable": true,
+        "default_value": "0",
+        "created_at": "2023-08-28T02:33:22.177Z",
+        "updated_at": "2023-08-28T01:02:57.867Z",
+        "database_connection_id": "5be10516-4cbe-4bc8-8b40-4c4901fb3e5f"
+      },
+      {
+        "id": "d456baf6-3e87-4748-93aa-4797076b96bb",
+        "table_name": "orders",
+        "field_name": "email",
+        "field_type": "boolean",
+        "is_nullable": true,
+        "default_value": "false",
+        "created_at": "2023-08-28T01:02:27.080Z",
+        "updated_at": "2023-08-27T13:13:20.261Z",
+        "database_connection_id": "5be10516-4cbe-4bc8-8b40-4c4901fb3e5f"
+      },
+      {
+        "id": "a6a4615a-f046-417d-a441-99bcfcc7ff1e",
+        "table_name": "customers",
+        "field_name": "phone",
+        "field_type": "date",
+        "is_nullable": true,
+        "default_value": "2022-01-01",
+        "created_at": "2023-08-27T10:43:42.397Z",
+        "updated_at": "2023-08-27T12:36:40.600Z",
+        "database_connection_id": "20b8afb0-801c-4be6-9034-5ebcbd60bc9d"
+      },
+      {
+        "id": "9e3d2247-074f-456b-823d-28dea677a49d",
+        "table_name": "invoices",
+        "field_name": "address",
+        "field_type": "float",
+        "is_nullable": false,
+        "default_value": "0.0",
+        "created_at": "2023-08-28T00:35:23.483Z",
+        "updated_at": "2023-08-27T20:34:36.486Z",
+        "database_connection_id": "5fb1d910-fb53-4451-af60-6e057721a047"
+      }
+    ],
+    "form": [
+      {
+        "id": "4605e54c-94d2-4339-ad33-1bb50b131615",
+        "form_type": "contact",
+        "created_at": "2023-08-27T17:16:56.869Z",
+        "updated_at": "2023-08-27T16:44:11.638Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "c470a64e-810e-48de-abf3-d0381a2fde08"
+      },
+      {
+        "id": "8479e0da-9f94-4529-ae06-a30f128cc1c0",
+        "form_type": "registration",
+        "created_at": "2023-08-27T18:46:13.864Z",
+        "updated_at": "2023-08-27T10:01:07.942Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "d456baf6-3e87-4748-93aa-4797076b96bb"
+      },
+      {
+        "id": "3dd2de13-ccfb-42c7-afda-f5dc8b1e7480",
+        "form_type": "feedback",
+        "created_at": "2023-08-28T06:12:42.877Z",
+        "updated_at": "2023-08-27T09:05:57.522Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "d456baf6-3e87-4748-93aa-4797076b96bb"
+      },
+      {
+        "id": "b3a9db09-c140-4551-9307-4195f340c1ba",
+        "form_type": "survey",
+        "created_at": "2023-08-27T21:55:37.671Z",
+        "updated_at": "2023-08-27T20:36:38.568Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "c470a64e-810e-48de-abf3-d0381a2fde08"
+      },
+      {
+        "id": "424c9096-af66-463c-b9e6-cb31230f36c0",
+        "form_type": "subscription",
+        "created_at": "2023-08-28T00:39:27.431Z",
+        "updated_at": "2023-08-28T05:05:21.145Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "a6a4615a-f046-417d-a441-99bcfcc7ff1e"
+      }
+    ],
+    "customer": [
+      {
+        "id": "3a30e569-ac28-4b18-877a-389105d2822c",
+        "first_name": "John",
+        "last_name": "Doe",
+        "address": "123 Main St",
+        "city": "New York",
+        "country": "United States",
+        "phone": "555-1234",
+        "created_at": "2023-08-27T21:14:57.100Z",
+        "updated_at": "2023-08-27T23:05:58.671Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "ae605247-77b4-41dd-a1f1-cb349f29379e",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "address": "456 Elm St",
+        "city": "Los Angeles",
+        "country": "Canada",
+        "phone": "555-5678",
+        "created_at": "2023-08-27T13:11:54.974Z",
+        "updated_at": "2023-08-27T16:41:58.723Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "891c5c96-0397-45e1-8346-03c0f9a69726",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "address": "789 Oak Ave",
+        "city": "Chicago",
+        "country": "United Kingdom",
+        "phone": "555-9012",
+        "created_at": "2023-08-27T23:00:30.045Z",
+        "updated_at": "2023-08-28T03:36:07.821Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "a00db310-6d08-4265-b9f5-0318ab3df038",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "address": "321 Pine Rd",
+        "city": "Houston",
+        "country": "Australia",
+        "phone": "555-3456",
+        "created_at": "2023-08-27T16:14:02.332Z",
+        "updated_at": "2023-08-27T23:04:17.418Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "81dc0c95-6151-439f-9a61-64e5d043140a",
+        "first_name": "David",
+        "last_name": "Wilson",
+        "address": "987 Maple Blvd",
+        "city": "Miami",
+        "country": "Germany",
+        "phone": "555-7890",
+        "created_at": "2023-08-27T13:53:38.233Z",
+        "updated_at": "2023-08-27T11:19:00.400Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "1cbb9b50-869a-409a-8041-340c7b19ab18",
+        "email": "Marilie.Wiza@gmail.com",
+        "firstName": "Camilla",
+        "lastName": "Kozey",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/96773809",
+        "tenantId": null
+      },
+      {
+        "reference": "ea213395-6bd7-4a7d-aa4a-b808fa8ab4f0",
+        "email": "Nathen20@gmail.com",
+        "firstName": "Laverna",
+        "lastName": "Ferry-Wehner",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/3830012",
+        "tenantId": null
+      },
+      {
+        "reference": "1fa362f3-3152-4fdd-a1f9-d5ee4af73c86",
+        "email": "Marcelina.Rogahn50@yahoo.com",
+        "firstName": "Maxime",
+        "lastName": "Russel",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/69249709",
+        "tenantId": null
+      },
+      {
+        "reference": "98b9c2b1-c315-472a-ba92-940873b967ed",
+        "email": "Viola_Kshlerin97@yahoo.com",
+        "firstName": "Vivienne",
+        "lastName": "Hintz",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/20907473",
+        "tenantId": null
+      },
+      {
+        "reference": "fade7e5a-9ac7-4c91-9d8a-46978ea67d97",
+        "email": "Lon_Kilback63@yahoo.com",
+        "firstName": "Maida",
+        "lastName": "Renner",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8122173",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "database_connection": [
+      {
+        "id": "4ed75614-4a63-4fe3-8941-753acd453d39",
+        "host": "localhost",
+        "port": 23296,
+        "database_name": "my_database",
+        "username": "admin",
+        "password": "p@ssw0rd",
+        "created_at": "2023-08-27T13:00:37.298Z",
+        "updated_at": "2023-08-27T07:58:13.890Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "ce51a6a6-9c2c-43ba-9739-a2c740374330",
+        "host": "127.0.0.1",
+        "port": 97452,
+        "database_name": "company_db",
+        "username": "user",
+        "password": "secure123",
+        "created_at": "2023-08-27T18:18:37.543Z",
+        "updated_at": "2023-08-28T04:45:30.570Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "61104e82-3e5b-44e1-9ac9-a4e51e6156dc",
+        "host": "db.example.com",
+        "port": 73310,
+        "database_name": "sales_db",
+        "username": "dbadmin",
+        "password": "dbpassword",
+        "created_at": "2023-08-27T11:14:35.055Z",
+        "updated_at": "2023-08-28T00:05:42.382Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "16b9ecd5-c72d-45a3-acbd-99edca0b4725",
+        "host": "dbserver.internal",
+        "port": 6615,
+        "database_name": "customer_db",
+        "username": "root",
+        "password": "secret",
+        "created_at": "2023-08-27T16:41:32.692Z",
+        "updated_at": "2023-08-27T17:34:34.313Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "3133e66d-f3a3-4f88-9396-f9c2fe184f66",
+        "host": "cloud-db-provider",
+        "port": 77172,
+        "database_name": "inventory_db",
+        "username": "dbuser",
+        "password": "password123",
+        "created_at": "2023-08-28T00:45:35.067Z",
+        "updated_at": "2023-08-28T06:34:07.222Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "table_structure": [
+      {
+        "id": "6e449ba6-8267-4b69-bf66-e1ab1689b4f5",
+        "table_name": "users",
+        "field_name": "id",
+        "field_type": "integer",
+        "is_nullable": true,
+        "default_value": "NULL",
+        "created_at": "2023-08-28T02:18:48.803Z",
+        "updated_at": "2023-08-28T02:20:14.642Z",
+        "database_connection_id": "16b9ecd5-c72d-45a3-acbd-99edca0b4725"
+      },
+      {
+        "id": "ac5f3302-7bac-46d5-9d88-761ef92eafde",
+        "table_name": "orders",
+        "field_name": "name",
+        "field_type": "text",
+        "is_nullable": true,
+        "default_value": "0",
+        "created_at": "2023-08-27T22:23:42.310Z",
+        "updated_at": "2023-08-27T07:36:10.067Z",
+        "database_connection_id": "3133e66d-f3a3-4f88-9396-f9c2fe184f66"
+      },
+      {
+        "id": "4e46aede-f7f5-48d4-b83c-acc6629a6ec9",
+        "table_name": "products",
+        "field_name": "email",
+        "field_type": "varchar",
+        "is_nullable": true,
+        "default_value": "N/A",
+        "created_at": "2023-08-27T07:26:44.273Z",
+        "updated_at": "2023-08-27T08:17:49.678Z",
+        "database_connection_id": "16b9ecd5-c72d-45a3-acbd-99edca0b4725"
+      },
+      {
+        "id": "e62500d1-9eed-451f-b6a3-9d0c1666d87d",
+        "table_name": "customers",
+        "field_name": "phone",
+        "field_type": "date",
+        "is_nullable": true,
+        "default_value": "false",
+        "created_at": "2023-08-27T13:11:41.272Z",
+        "updated_at": "2023-08-27T10:21:11.848Z",
+        "database_connection_id": "16b9ecd5-c72d-45a3-acbd-99edca0b4725"
+      },
+      {
+        "id": "90d3f386-7fef-4d11-83a7-2e3ecf331016",
+        "table_name": "invoices",
+        "field_name": "address",
+        "field_type": "boolean",
+        "is_nullable": true,
+        "default_value": "nihil rem ipsum",
+        "created_at": "2023-08-27T07:11:45.906Z",
+        "updated_at": "2023-08-27T18:56:54.848Z",
+        "database_connection_id": "61104e82-3e5b-44e1-9ac9-a4e51e6156dc"
+      }
+    ],
+    "form": [
+      {
+        "id": "149b8f7e-7841-48e5-bfa2-d78e769c07af",
+        "form_type": "contact",
+        "created_at": "2023-08-28T05:53:00.387Z",
+        "updated_at": "2023-08-27T11:10:20.540Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "90d3f386-7fef-4d11-83a7-2e3ecf331016"
+      },
+      {
+        "id": "14eb2296-f940-48c8-b952-313032e01e44",
+        "form_type": "registration",
+        "created_at": "2023-08-27T12:51:17.463Z",
+        "updated_at": "2023-08-28T03:16:05.012Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "ac5f3302-7bac-46d5-9d88-761ef92eafde"
+      },
+      {
+        "id": "527e3d12-67b7-4b45-8322-68490af8b222",
+        "form_type": "feedback",
+        "created_at": "2023-08-27T19:16:43.970Z",
+        "updated_at": "2023-08-27T17:40:45.034Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "e62500d1-9eed-451f-b6a3-9d0c1666d87d"
+      },
+      {
+        "id": "68ed5c45-46c4-4c01-beb2-9cbd258dd1a9",
+        "form_type": "survey",
+        "created_at": "2023-08-28T03:39:57.071Z",
+        "updated_at": "2023-08-27T17:04:55.247Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "4e46aede-f7f5-48d4-b83c-acc6629a6ec9"
+      },
+      {
+        "id": "f3267105-61bc-4754-963c-a7f8b67121ec",
+        "form_type": "order",
+        "created_at": "2023-08-27T17:15:18.242Z",
+        "updated_at": "2023-08-28T00:53:32.356Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "90d3f386-7fef-4d11-83a7-2e3ecf331016"
+      }
+    ],
+    "customer": [
+      {
+        "id": "a0a2b0ed-3db7-4977-8672-a5e83a49caa5",
+        "first_name": "John",
+        "last_name": "Doe",
+        "address": "123 Main St",
+        "city": "New York",
+        "country": "United States",
+        "phone": "555-1234",
+        "created_at": "2023-08-27T21:52:51.473Z",
+        "updated_at": "2023-08-27T14:09:28.792Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "c8f292a2-cf5f-4a9e-ace5-fe76b1a5bdd2",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "address": "456 Elm St",
+        "city": "Los Angeles",
+        "country": "Canada",
+        "phone": "555-5678",
+        "created_at": "2023-08-27T22:46:47.190Z",
+        "updated_at": "2023-08-27T11:31:57.224Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "b0f2912d-91e7-45d2-a83c-39c939c3b8cf",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "address": "789 Oak Ave",
+        "city": "Chicago",
+        "country": "United Kingdom",
+        "phone": "555-9876",
+        "created_at": "2023-08-28T00:14:59.081Z",
+        "updated_at": "2023-08-27T09:27:25.541Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "d2c42cef-5dd2-4eeb-9faf-f72009bd0880",
+        "first_name": "Sarah",
+        "last_name": "Wilson",
+        "address": "10 Pine Rd",
+        "city": "Houston",
+        "country": "Australia",
+        "phone": "555-4321",
+        "created_at": "2023-08-27T08:15:17.572Z",
+        "updated_at": "2023-08-27T15:15:43.249Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "5000069d-07cd-4ac7-a49a-1aaa36f7f336",
+        "first_name": "David",
+        "last_name": "Johnson",
+        "address": "555 Maple Ln",
+        "city": "Miami",
+        "country": "Germany",
+        "phone": "555-8765",
+        "created_at": "2023-08-28T03:33:28.370Z",
+        "updated_at": "2023-08-28T00:20:41.020Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "5a2d61c4-ccea-4c69-b61b-ad7a1bdef718",
+        "email": "Arnold_Collier@yahoo.com",
+        "firstName": "Marion",
+        "lastName": "Koch",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/822.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "50b98e75-1f15-4005-9242-613593ca8905",
+        "email": "Bret15@yahoo.com",
+        "firstName": "Roscoe",
+        "lastName": "Murphy",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/97072289",
+        "tenantId": null
+      },
+      {
+        "reference": "5ec535ff-f3d0-4538-afe3-3680f55e49df",
+        "email": "Jalen_Abernathy5@yahoo.com",
+        "firstName": "Godfrey",
+        "lastName": "Schinner",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1041.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "1de80124-ada7-44f3-89d2-312ea44df74e",
+        "email": "Leone77@hotmail.com",
+        "firstName": "Rachelle",
+        "lastName": "Champlin",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/91198041",
+        "tenantId": null
+      },
+      {
+        "reference": "fc533370-6221-420d-971d-8898f9baf8d8",
+        "email": "Aurelie_Orn@yahoo.com",
+        "firstName": "Waino",
+        "lastName": "Pfeffer",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/90652103",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "database_connection": [
+      {
+        "id": "288b449f-d9e9-4913-a4e9-504d3839818b",
+        "host": "localhost",
+        "port": 72453,
+        "database_name": "mydb",
+        "username": "admin",
+        "password": "p@ssw0rd",
+        "created_at": "2023-08-27T18:55:40.594Z",
+        "updated_at": "2023-08-28T01:01:50.469Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "e737dbfb-10c6-4344-9061-2d2fbb4e19c3",
+        "host": "127.0.0.1",
+        "port": 50055,
+        "database_name": "testdb",
+        "username": "user",
+        "password": "secure123",
+        "created_at": "2023-08-28T00:28:40.451Z",
+        "updated_at": "2023-08-27T19:21:09.603Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "b52b8a55-a305-402c-a38f-ff04e30d70f9",
+        "host": "db.example.com",
+        "port": 10411,
+        "database_name": "companydb",
+        "username": "dbadmin",
+        "password": "mysecretpassword",
+        "created_at": "2023-08-27T23:49:10.729Z",
+        "updated_at": "2023-08-27T16:54:20.803Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "08912860-c5d5-4b6f-88b6-a0ba8e04f537",
+        "host": "dbserver.local",
+        "port": 36689,
+        "database_name": "projectdb",
+        "username": "dbuser",
+        "password": "password123",
+        "created_at": "2023-08-27T14:59:24.954Z",
+        "updated_at": "2023-08-28T04:08:07.330Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "85791ea8-bf75-466e-b46b-e890370af3cc",
+        "host": "database.company.com",
+        "port": 84715,
+        "database_name": "salesdb",
+        "username": "developer",
+        "password": "admin123",
+        "created_at": "2023-08-28T04:11:24.768Z",
+        "updated_at": "2023-08-27T18:12:18.726Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "table_structure": [
+      {
+        "id": "3b99ae06-bb33-4f04-acec-8ee8c4902b75",
+        "table_name": "users",
+        "field_name": "id",
+        "field_type": "integer",
+        "is_nullable": false,
+        "default_value": "NULL",
+        "created_at": "2023-08-28T05:43:11.670Z",
+        "updated_at": "2023-08-28T05:17:23.162Z",
+        "database_connection_id": "85791ea8-bf75-466e-b46b-e890370af3cc"
+      },
+      {
+        "id": "d6abca0b-5e9d-4925-a8d4-74894c6d2017",
+        "table_name": "products",
+        "field_name": "name",
+        "field_type": "string",
+        "is_nullable": true,
+        "default_value": "0",
+        "created_at": "2023-08-27T08:15:22.742Z",
+        "updated_at": "2023-08-27T15:01:53.742Z",
+        "database_connection_id": "288b449f-d9e9-4913-a4e9-504d3839818b"
+      },
+      {
+        "id": "69c479bf-62c7-4339-b917-255d50554c1c",
+        "table_name": "orders",
+        "field_name": "email",
+        "field_type": "text",
+        "is_nullable": false,
+        "default_value": "N/A",
+        "created_at": "2023-08-28T01:52:27.585Z",
+        "updated_at": "2023-08-27T18:37:53.077Z",
+        "database_connection_id": "288b449f-d9e9-4913-a4e9-504d3839818b"
+      },
+      {
+        "id": "06089a94-47ac-4e70-9d5e-31cb01d3eff0",
+        "table_name": "customers",
+        "field_name": "address",
+        "field_type": "boolean",
+        "is_nullable": true,
+        "default_value": "true",
+        "created_at": "2023-08-27T21:35:44.991Z",
+        "updated_at": "2023-08-28T03:37:27.654Z",
+        "database_connection_id": "08912860-c5d5-4b6f-88b6-a0ba8e04f537"
+      },
+      {
+        "id": "2f7dde09-c99a-4a5e-8db9-db88af81452d",
+        "table_name": "invoices",
+        "field_name": "phone",
+        "field_type": "datetime",
+        "is_nullable": false,
+        "default_value": "2021-01-01",
+        "created_at": "2023-08-28T06:42:19.566Z",
+        "updated_at": "2023-08-28T02:56:16.902Z",
+        "database_connection_id": "85791ea8-bf75-466e-b46b-e890370af3cc"
+      }
+    ],
+    "form": [
+      {
+        "id": "402c186a-078a-4fef-b619-70eb9a48b0c5",
+        "form_type": "contact",
+        "created_at": "2023-08-27T22:43:50.892Z",
+        "updated_at": "2023-08-27T10:06:03.572Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "d6abca0b-5e9d-4925-a8d4-74894c6d2017"
+      },
+      {
+        "id": "e85e5f52-84d5-4d53-b33c-ac423fefd3a9",
+        "form_type": "registration",
+        "created_at": "2023-08-27T17:58:39.742Z",
+        "updated_at": "2023-08-27T16:07:52.944Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "06089a94-47ac-4e70-9d5e-31cb01d3eff0"
+      },
+      {
+        "id": "d4766c81-c18a-4917-8a4f-debb78222361",
+        "form_type": "feedback",
+        "created_at": "2023-08-27T23:45:11.746Z",
+        "updated_at": "2023-08-27T12:15:52.458Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "06089a94-47ac-4e70-9d5e-31cb01d3eff0"
+      },
+      {
+        "id": "dba79c5b-646a-4165-a0ee-4d696843b86e",
+        "form_type": "survey",
+        "created_at": "2023-08-27T21:01:24.795Z",
+        "updated_at": "2023-08-27T23:31:03.481Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "2f7dde09-c99a-4a5e-8db9-db88af81452d"
+      },
+      {
+        "id": "bca91f06-97c3-484f-8b20-f0a26a752a0c",
+        "form_type": "order",
+        "created_at": "2023-08-27T23:41:14.411Z",
+        "updated_at": "2023-08-27T18:52:24.361Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "3b99ae06-bb33-4f04-acec-8ee8c4902b75"
+      }
+    ],
+    "customer": [
+      {
+        "id": "ce682a95-0ca3-414a-b7b2-4ca07f8bcae0",
+        "first_name": "John",
+        "last_name": "Doe",
+        "address": "123 Main St",
+        "city": "New York",
+        "country": "United States",
+        "phone": "123-456-7890",
+        "created_at": "2023-08-27T13:11:53.264Z",
+        "updated_at": "2023-08-28T02:10:02.230Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "207b2e5a-62fd-4217-af42-43d2cb66bec2",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "address": "456 Elm St",
+        "city": "Los Angeles",
+        "country": "Canada",
+        "phone": "555-123-4567",
+        "created_at": "2023-08-27T12:55:43.179Z",
+        "updated_at": "2023-08-27T09:33:25.036Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "dcf5b156-8448-4224-9bef-2fef3b8194dc",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "address": "789 Oak Ave",
+        "city": "Chicago",
+        "country": "United Kingdom",
+        "phone": "987-654-3210",
+        "created_at": "2023-08-27T14:23:30.626Z",
+        "updated_at": "2023-08-27T08:42:56.522Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "b0fbf2fe-c0b1-4386-967a-757c02848b84",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "address": "321 Pine Rd",
+        "city": "Houston",
+        "country": "Australia",
+        "phone": "888-555-1234",
+        "created_at": "2023-08-27T14:20:42.330Z",
+        "updated_at": "2023-08-28T00:38:43.612Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "206c672b-019e-40d3-912d-e9d19329673e",
+        "first_name": "David",
+        "last_name": "Wilson",
+        "address": "987 Maple Ln",
+        "city": "Miami",
+        "country": "Germany",
+        "phone": "111-222-3333",
+        "created_at": "2023-08-27T12:18:35.852Z",
+        "updated_at": "2023-08-27T18:40:46.310Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "a27707ec-47f1-4af7-a7a6-bdacddd3b161",
+        "email": "Joe.Buckridge@gmail.com",
+        "firstName": "Adolf",
+        "lastName": "Schaden",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/475.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "bb7ef464-66fb-41a1-8d55-60fc24ea6058",
+        "email": "Jazmin_Ratke54@yahoo.com",
+        "firstName": "Darion",
+        "lastName": "Rau",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/72339137",
+        "tenantId": null
+      },
+      {
+        "reference": "758a6b98-9fee-4131-abaa-9461a2a7cfb9",
+        "email": "Rosamond1@hotmail.com",
+        "firstName": "Dean",
+        "lastName": "Gislason-Prohaska",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/964.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "23445dca-4e59-45f8-a820-67e6aeaab6e8",
+        "email": "Elroy50@yahoo.com",
+        "firstName": "Abbie",
+        "lastName": "West",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/22401646",
+        "tenantId": null
+      },
+      {
+        "reference": "9f189bd0-7c1d-4c27-a4e0-92ed5b42faec",
+        "email": "Braden81@hotmail.com",
+        "firstName": "Carmine",
+        "lastName": "Yundt",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/348.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "database_connection": [
+      {
+        "id": "aeeab1c6-3a8d-4e48-a94c-08a25d722661",
+        "host": "localhost",
+        "port": 48274,
+        "database_name": "mydb",
+        "username": "admin",
+        "password": "p@ssw0rd",
+        "created_at": "2023-08-27T07:27:28.209Z",
+        "updated_at": "2023-08-27T09:29:17.951Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "49da4706-b6ed-46a1-bb55-329bf7026c9e",
+        "host": "db.example.com",
+        "port": 80834,
+        "database_name": "companydb",
+        "username": "user",
+        "password": "secret123",
+        "created_at": "2023-08-27T16:12:17.414Z",
+        "updated_at": "2023-08-27T09:38:19.487Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "db875f78-a60b-4b93-9b44-94e1b4b6fd54",
+        "host": "123.45.67.89",
+        "port": 89663,
+        "database_name": "testdb",
+        "username": "dbadmin",
+        "password": "admin123",
+        "created_at": "2023-08-27T23:44:36.680Z",
+        "updated_at": "2023-08-27T13:53:18.950Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "4396c92d-6866-43d1-819f-d1059d3d8a9b",
+        "host": "database.example.com",
+        "port": 48687,
+        "database_name": "projectdb",
+        "username": "root",
+        "password": "password1",
+        "created_at": "2023-08-27T06:53:45.280Z",
+        "updated_at": "2023-08-27T16:45:26.385Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "c1769962-16ac-47f3-b947-a501f575e808",
+        "host": "dbserver.test",
+        "port": 58893,
+        "database_name": "customerdb",
+        "username": "developer",
+        "password": "securepwd",
+        "created_at": "2023-08-28T05:26:24.767Z",
+        "updated_at": "2023-08-28T02:06:50.333Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "table_structure": [
+      {
+        "id": "d2003f80-1e8f-4a29-bc78-f48f830ef34a",
+        "table_name": "users",
+        "field_name": "id",
+        "field_type": "integer",
+        "is_nullable": false,
+        "default_value": "NULL",
+        "created_at": "2023-08-28T02:45:18.198Z",
+        "updated_at": "2023-08-28T05:34:12.096Z",
+        "database_connection_id": "aeeab1c6-3a8d-4e48-a94c-08a25d722661"
+      },
+      {
+        "id": "27f8b77a-9976-4518-98d8-0b32a7d15ccb",
+        "table_name": "products",
+        "field_name": "name",
+        "field_type": "string",
+        "is_nullable": false,
+        "default_value": "0",
+        "created_at": "2023-08-27T16:40:41.771Z",
+        "updated_at": "2023-08-27T13:47:56.385Z",
+        "database_connection_id": "db875f78-a60b-4b93-9b44-94e1b4b6fd54"
+      },
+      {
+        "id": "b3ac5576-6735-4877-9dd3-e249768e670c",
+        "table_name": "orders",
+        "field_name": "email",
+        "field_type": "boolean",
+        "is_nullable": true,
+        "default_value": "false",
+        "created_at": "2023-08-27T19:55:49.140Z",
+        "updated_at": "2023-08-28T00:39:48.663Z",
+        "database_connection_id": "c1769962-16ac-47f3-b947-a501f575e808"
+      },
+      {
+        "id": "2a7c1fad-881b-42b3-ba6f-892eaa433dd1",
+        "table_name": "customers",
+        "field_name": "phone",
+        "field_type": "datetime",
+        "is_nullable": false,
+        "default_value": "2021-01-01 00:00:00",
+        "created_at": "2023-08-27T11:22:09.555Z",
+        "updated_at": "2023-08-27T16:39:49.282Z",
+        "database_connection_id": "c1769962-16ac-47f3-b947-a501f575e808"
+      },
+      {
+        "id": "1a5b438b-72ab-472d-bf35-dbe156bfdbcb",
+        "table_name": "invoices",
+        "field_name": "address",
+        "field_type": "float",
+        "is_nullable": true,
+        "default_value": "0.0",
+        "created_at": "2023-08-28T01:56:24.267Z",
+        "updated_at": "2023-08-27T07:34:09.356Z",
+        "database_connection_id": "49da4706-b6ed-46a1-bb55-329bf7026c9e"
+      }
+    ],
+    "form": [
+      {
+        "id": "c3b56fe9-6f52-4879-b3ea-eff6a2d9ceb9",
+        "form_type": "contact",
+        "created_at": "2023-08-27T08:08:14.067Z",
+        "updated_at": "2023-08-27T19:51:39.612Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "d2003f80-1e8f-4a29-bc78-f48f830ef34a"
+      },
+      {
+        "id": "cca3c4ec-6d85-4cfa-ab11-bbd266f92608",
+        "form_type": "registration",
+        "created_at": "2023-08-28T06:03:22.017Z",
+        "updated_at": "2023-08-27T12:02:49.892Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "1a5b438b-72ab-472d-bf35-dbe156bfdbcb"
+      },
+      {
+        "id": "dc8e5a24-1945-4f96-a87f-e9b14aaff3b8",
+        "form_type": "feedback",
+        "created_at": "2023-08-28T00:14:49.211Z",
+        "updated_at": "2023-08-27T10:44:00.135Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "2a7c1fad-881b-42b3-ba6f-892eaa433dd1"
+      },
+      {
+        "id": "4553aba4-7487-4461-9389-7657b47ff011",
+        "form_type": "subscription",
+        "created_at": "2023-08-27T17:05:51.186Z",
+        "updated_at": "2023-08-27T10:48:24.016Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "1a5b438b-72ab-472d-bf35-dbe156bfdbcb"
+      },
+      {
+        "id": "6ced98b4-fc9f-4530-9c0b-addd6db6246c",
+        "form_type": "survey",
+        "created_at": "2023-08-27T13:10:31.321Z",
+        "updated_at": "2023-08-28T03:50:51.137Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "d2003f80-1e8f-4a29-bc78-f48f830ef34a"
+      }
+    ],
+    "customer": [
+      {
+        "id": "4d86f07e-d480-44bb-95f2-435cb3743d62",
+        "first_name": "John",
+        "last_name": "Doe",
+        "address": "123 Main St",
+        "city": "New York",
+        "country": "United States",
+        "phone": "123-456-7890",
+        "created_at": "2023-08-27T22:12:09.720Z",
+        "updated_at": "2023-08-28T05:59:53.640Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "adb03584-b418-46bc-ba1b-4104cf20885f",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "address": "456 Elm St",
+        "city": "Los Angeles",
+        "country": "Canada",
+        "phone": "555-123-4567",
+        "created_at": "2023-08-27T21:58:10.754Z",
+        "updated_at": "2023-08-27T13:44:08.347Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "0903c0a3-c5e0-4618-871a-07d06360dae5",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "address": "789 Oak St",
+        "city": "Chicago",
+        "country": "United Kingdom",
+        "phone": "987-654-3210",
+        "created_at": "2023-08-27T22:43:25.427Z",
+        "updated_at": "2023-08-27T21:04:31.514Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "221266a5-1d24-465f-9650-7e6f920d0b98",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "address": "321 Pine St",
+        "city": "Houston",
+        "country": "Australia",
+        "phone": "888-555-1234",
+        "created_at": "2023-08-27T21:23:32.063Z",
+        "updated_at": "2023-08-27T22:30:53.382Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "82667290-8bba-4686-97a2-e8a31faf89e4",
+        "first_name": "Robert",
+        "last_name": "Wilson",
+        "address": "987 Maple St",
+        "city": "Miami",
+        "country": "Germany",
+        "phone": "777-999-8888",
+        "created_at": "2023-08-28T01:54:23.636Z",
+        "updated_at": "2023-08-27T12:09:22.054Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "14a33dd8-1572-433e-8901-105b0c32fea7",
+        "email": "Mario_Schneider45@hotmail.com",
+        "firstName": "Arlene",
+        "lastName": "Stanton",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/579.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "d686389d-dc72-4ce2-8429-aeb3250f811c",
+        "email": "Declan.Quigley25@hotmail.com",
+        "firstName": "Terence",
+        "lastName": "Dickens",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/2858481",
+        "tenantId": null
+      },
+      {
+        "reference": "c8030026-72f2-42d8-a223-4a99632f29e1",
+        "email": "Monique.Raynor@gmail.com",
+        "firstName": "Chase",
+        "lastName": "Erdman",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/11941599",
+        "tenantId": null
+      },
+      {
+        "reference": "0c39ca07-8780-4e4d-8014-fd55e2d9feb0",
+        "email": "Randal24@yahoo.com",
+        "firstName": "Iva",
+        "lastName": "Cremin",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/56.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "071d500c-1746-4950-b8d5-9e5a7c3dcdbb",
+        "email": "Tanya59@hotmail.com",
+        "firstName": "Willy",
+        "lastName": "Prohaska",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/372.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "database_connection": [
+      {
+        "id": "51918c54-4c69-4b7a-808f-5e57b72dc340",
+        "host": "localhost",
+        "port": 47799,
+        "database_name": "my_database",
+        "username": "admin",
+        "password": "p@ssw0rd",
+        "created_at": "2023-08-27T14:40:02.189Z",
+        "updated_at": "2023-08-27T18:41:32.333Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "aca0ab0c-59bd-47e3-b207-5ff3ebc090bf",
+        "host": "db.example.com",
+        "port": 8654,
+        "database_name": "company_db",
+        "username": "user",
+        "password": "secretpassword",
+        "created_at": "2023-08-27T16:32:26.342Z",
+        "updated_at": "2023-08-28T01:19:07.035Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "aa3ca513-6096-4f45-9d44-926b85667acd",
+        "host": "123.456.789.0",
+        "port": 8930,
+        "database_name": "sales_db",
+        "username": "db_admin",
+        "password": "admin123",
+        "created_at": "2023-08-27T12:29:53.510Z",
+        "updated_at": "2023-08-27T08:48:30.373Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "d5fd9375-c418-464a-8062-952d7d76031f",
+        "host": "db-server-01",
+        "port": 10560,
+        "database_name": "production_db",
+        "username": "db_user",
+        "password": "password123",
+        "created_at": "2023-08-28T01:57:38.297Z",
+        "updated_at": "2023-08-27T18:10:26.485Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "12b57214-6622-4ad8-bf79-34c0029b0fda",
+        "host": "database.company.com",
+        "port": 44204,
+        "database_name": "test_db",
+        "username": "app_user",
+        "password": "dbpassword",
+        "created_at": "2023-08-27T08:04:10.249Z",
+        "updated_at": "2023-08-27T12:25:21.715Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "table_structure": [
+      {
+        "id": "9366d943-23b4-4200-ae5b-b5e3bcdeae4d",
+        "table_name": "users",
+        "field_name": "id",
+        "field_type": "integer",
+        "is_nullable": false,
+        "default_value": "NULL",
+        "created_at": "2023-08-27T06:59:46.708Z",
+        "updated_at": "2023-08-27T17:40:36.331Z",
+        "database_connection_id": "12b57214-6622-4ad8-bf79-34c0029b0fda"
+      },
+      {
+        "id": "0edfa4ac-e77c-4ed3-be16-7a76c5b0628f",
+        "table_name": "products",
+        "field_name": "name",
+        "field_type": "string",
+        "is_nullable": false,
+        "default_value": "0",
+        "created_at": "2023-08-28T00:40:50.344Z",
+        "updated_at": "2023-08-27T23:55:31.481Z",
+        "database_connection_id": "d5fd9375-c418-464a-8062-952d7d76031f"
+      },
+      {
+        "id": "08d12516-0f71-4e3b-b84a-393c53ad7028",
+        "table_name": "orders",
+        "field_name": "email",
+        "field_type": "text",
+        "is_nullable": false,
+        "default_value": "N/A",
+        "created_at": "2023-08-27T07:10:36.830Z",
+        "updated_at": "2023-08-27T07:35:34.530Z",
+        "database_connection_id": "d5fd9375-c418-464a-8062-952d7d76031f"
+      },
+      {
+        "id": "9b3a10e9-25b4-4450-8ccb-265f97fcc2cb",
+        "table_name": "customers",
+        "field_name": "address",
+        "field_type": "boolean",
+        "is_nullable": false,
+        "default_value": "false",
+        "created_at": "2023-08-27T11:44:05.620Z",
+        "updated_at": "2023-08-28T03:03:04.893Z",
+        "database_connection_id": "12b57214-6622-4ad8-bf79-34c0029b0fda"
+      },
+      {
+        "id": "5eff4677-7d89-4a72-901c-61b0bf653011",
+        "table_name": "invoices",
+        "field_name": "phone",
+        "field_type": "date",
+        "is_nullable": true,
+        "default_value": "01-01-1970",
+        "created_at": "2023-08-27T06:58:52.106Z",
+        "updated_at": "2023-08-27T08:26:32.115Z",
+        "database_connection_id": "12b57214-6622-4ad8-bf79-34c0029b0fda"
+      }
+    ],
+    "form": [
+      {
+        "id": "1d97fc8b-38b4-4928-9a32-6a19e7c3c5b3",
+        "form_type": "registration",
+        "created_at": "2023-08-27T13:17:02.630Z",
+        "updated_at": "2023-08-27T21:27:41.028Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "0edfa4ac-e77c-4ed3-be16-7a76c5b0628f"
+      },
+      {
+        "id": "744f36d8-f096-4295-a503-d060334f1157",
+        "form_type": "contact",
+        "created_at": "2023-08-27T21:13:05.572Z",
+        "updated_at": "2023-08-27T09:07:03.814Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "5eff4677-7d89-4a72-901c-61b0bf653011"
+      },
+      {
+        "id": "bb2b9d8b-91c2-4d61-974a-915884734d6e",
+        "form_type": "feedback",
+        "created_at": "2023-08-27T09:20:25.653Z",
+        "updated_at": "2023-08-28T02:13:47.403Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "9366d943-23b4-4200-ae5b-b5e3bcdeae4d"
+      },
+      {
+        "id": "befceec2-28b7-4de0-8d82-d420defb46a1",
+        "form_type": "survey",
+        "created_at": "2023-08-28T00:45:23.089Z",
+        "updated_at": "2023-08-28T05:09:07.814Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "5eff4677-7d89-4a72-901c-61b0bf653011"
+      },
+      {
+        "id": "dcf22a99-311a-40cd-a8c3-65bc5dbe79f6",
+        "form_type": "order",
+        "created_at": "2023-08-27T12:06:31.958Z",
+        "updated_at": "2023-08-28T03:11:34.299Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "5eff4677-7d89-4a72-901c-61b0bf653011"
+      }
+    ],
+    "customer": [
+      {
+        "id": "e75f9b95-0f39-42f3-8ad8-6a803e366d58",
+        "first_name": "John",
+        "last_name": "Doe",
+        "address": "123 Main St",
+        "city": "New York",
+        "country": "United States",
+        "phone": "555-1234",
+        "created_at": "2023-08-28T01:27:08.786Z",
+        "updated_at": "2023-08-27T20:52:49.731Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "566f0d9e-8cc9-4a1c-8ad2-90a445428a75",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "address": "456 Elm St",
+        "city": "Los Angeles",
+        "country": "Canada",
+        "phone": "555-5678",
+        "created_at": "2023-08-27T11:13:37.114Z",
+        "updated_at": "2023-08-27T11:32:27.103Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "1ebe6fa9-736b-411c-8e5f-a0c1a8afb1fb",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "address": "789 Oak Ave",
+        "city": "Chicago",
+        "country": "United Kingdom",
+        "phone": "555-9012",
+        "created_at": "2023-08-27T10:19:00.189Z",
+        "updated_at": "2023-08-27T14:30:01.849Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "b6e398b5-dc71-4688-be19-e8eddbb22d0d",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "address": "321 Pine Rd",
+        "city": "Houston",
+        "country": "Australia",
+        "phone": "555-3456",
+        "created_at": "2023-08-27T12:06:50.785Z",
+        "updated_at": "2023-08-27T07:48:43.126Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "d9365f25-ca1a-4c8d-b256-0381e9585415",
+        "first_name": "Robert",
+        "last_name": "Wilson",
+        "address": "987 Maple Blvd",
+        "city": "Miami",
+        "country": "Germany",
+        "phone": "555-7890",
+        "created_at": "2023-08-28T00:42:17.565Z",
+        "updated_at": "2023-08-27T12:36:19.604Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "be553d48-ba0d-4e91-82ed-ade5ab98c392",
+        "email": "Elisha66@hotmail.com",
+        "firstName": "Arielle",
+        "lastName": "Hickle",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/66.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "f7f3db96-9699-4d8a-aef7-80a6998fd035",
+        "email": "Reanna.Kovacek@gmail.com",
+        "firstName": "Kamille",
+        "lastName": "Herman",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/744.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "0aa5eb39-1b98-48e4-b6ce-5186d42ef601",
+        "email": "Dillan59@yahoo.com",
+        "firstName": "Emmitt",
+        "lastName": "Champlin",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/45995245",
+        "tenantId": null
+      },
+      {
+        "reference": "b18939d4-28e9-49be-bc32-0090e35cbb56",
+        "email": "Jerry17@hotmail.com",
+        "firstName": "Fletcher",
+        "lastName": "Barton",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/22.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "9e76454a-43d7-46bc-90af-88729e424dfd",
+        "email": "Giovanni.Howell@gmail.com",
+        "firstName": "Rosendo",
+        "lastName": "Nikolaus-Quitzon",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/93431731",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "database_connection": [
+      {
+        "id": "69f9eebf-27fd-4cae-9c04-c8c7337f662b",
+        "host": "localhost",
+        "port": 12387,
+        "database_name": "my_database",
+        "username": "admin",
+        "password": "P@ssw0rd",
+        "created_at": "2023-08-27T13:48:52.428Z",
+        "updated_at": "2023-08-27T17:24:54.109Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "39aeade3-2836-44bb-bf2f-9b1ca16cea2e",
+        "host": "db.example.com",
+        "port": 11654,
+        "database_name": "company_db",
+        "username": "user123",
+        "password": "mysecretpassword",
+        "created_at": "2023-08-27T22:11:03.919Z",
+        "updated_at": "2023-08-28T06:06:44.262Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "51adce6a-189f-42b2-aa80-6ef7ca728ea1",
+        "host": "123.45.67.89",
+        "port": 83385,
+        "database_name": "test_db",
+        "username": "db_admin",
+        "password": "12345678",
+        "created_at": "2023-08-27T12:02:56.556Z",
+        "updated_at": "2023-08-28T01:09:07.091Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "428e0c90-1efb-4d8a-bf01-366c478581ab",
+        "host": "db-server-01",
+        "port": 54853,
+        "database_name": "sales_db",
+        "username": "john.doe",
+        "password": "password123",
+        "created_at": "2023-08-27T20:17:31.560Z",
+        "updated_at": "2023-08-27T17:14:56.613Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "f21bddd2-d1fe-4e81-abe0-458a12bc04b8",
+        "host": "my-database-host",
+        "port": 69316,
+        "database_name": "customer_db",
+        "username": "db_user",
+        "password": "secure_password",
+        "created_at": "2023-08-27T09:43:13.721Z",
+        "updated_at": "2023-08-27T20:45:33.753Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "table_structure": [
+      {
+        "id": "139843ea-f650-48a6-a154-335385ea80c8",
+        "table_name": "users",
+        "field_name": "id",
+        "field_type": "integer",
+        "is_nullable": true,
+        "default_value": "NULL",
+        "created_at": "2023-08-27T14:59:35.301Z",
+        "updated_at": "2023-08-27T11:10:03.117Z",
+        "database_connection_id": "f21bddd2-d1fe-4e81-abe0-458a12bc04b8"
+      },
+      {
+        "id": "b95ce252-2938-4ad9-8d25-eea5d4f54c8e",
+        "table_name": "products",
+        "field_name": "name",
+        "field_type": "string",
+        "is_nullable": true,
+        "default_value": "0",
+        "created_at": "2023-08-27T08:19:55.780Z",
+        "updated_at": "2023-08-27T16:34:53.173Z",
+        "database_connection_id": "51adce6a-189f-42b2-aa80-6ef7ca728ea1"
+      },
+      {
+        "id": "9eada996-3559-4e5c-846d-6307a3851580",
+        "table_name": "orders",
+        "field_name": "email",
+        "field_type": "text",
+        "is_nullable": false,
+        "default_value": "N/A",
+        "created_at": "2023-08-28T04:35:30.195Z",
+        "updated_at": "2023-08-28T05:36:33.093Z",
+        "database_connection_id": "69f9eebf-27fd-4cae-9c04-c8c7337f662b"
+      },
+      {
+        "id": "c5dc865d-6030-4df5-aab7-d4a79f9c366a",
+        "table_name": "customers",
+        "field_name": "address",
+        "field_type": "boolean",
+        "is_nullable": false,
+        "default_value": "false",
+        "created_at": "2023-08-27T21:08:19.318Z",
+        "updated_at": "2023-08-27T16:53:46.440Z",
+        "database_connection_id": "51adce6a-189f-42b2-aa80-6ef7ca728ea1"
+      },
+      {
+        "id": "7576a7a8-111d-4dce-bc22-9a2f4e73781c",
+        "table_name": "invoices",
+        "field_name": "phone",
+        "field_type": "datetime",
+        "is_nullable": false,
+        "default_value": "2021-01-01",
+        "created_at": "2023-08-27T23:19:01.119Z",
+        "updated_at": "2023-08-27T21:11:20.183Z",
+        "database_connection_id": "51adce6a-189f-42b2-aa80-6ef7ca728ea1"
+      }
+    ],
+    "form": [
+      {
+        "id": "61e90886-ed3a-4e1c-a72f-6912132d21c0",
+        "form_type": "contact",
+        "created_at": "2023-08-27T10:52:29.057Z",
+        "updated_at": "2023-08-28T04:53:26.559Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "c5dc865d-6030-4df5-aab7-d4a79f9c366a"
+      },
+      {
+        "id": "e01c0717-1b1c-4d91-a396-bca24a8e2670",
+        "form_type": "registration",
+        "created_at": "2023-08-27T13:46:30.453Z",
+        "updated_at": "2023-08-27T19:42:58.334Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "9eada996-3559-4e5c-846d-6307a3851580"
+      },
+      {
+        "id": "04f253a7-d9d8-4ed7-8118-1a7456a7ac48",
+        "form_type": "feedback",
+        "created_at": "2023-08-27T19:03:42.758Z",
+        "updated_at": "2023-08-27T18:14:36.071Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "139843ea-f650-48a6-a154-335385ea80c8"
+      },
+      {
+        "id": "775cc10e-2dcc-4281-a955-76263a6b9a20",
+        "form_type": "survey",
+        "created_at": "2023-08-27T07:12:32.956Z",
+        "updated_at": "2023-08-27T20:29:16.902Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "c5dc865d-6030-4df5-aab7-d4a79f9c366a"
+      },
+      {
+        "id": "069112c1-316c-477b-99d7-c153f9af84f9",
+        "form_type": "application",
+        "created_at": "2023-08-28T06:03:56.266Z",
+        "updated_at": "2023-08-28T00:25:49.981Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "c5dc865d-6030-4df5-aab7-d4a79f9c366a"
+      }
+    ],
+    "customer": [
+      {
+        "id": "128fea45-cd47-4d5e-9c66-024d7aa9b0e5",
+        "first_name": "John",
+        "last_name": "Doe",
+        "address": "123 Main St",
+        "city": "New York",
+        "country": "United States",
+        "phone": "555-1234",
+        "created_at": "2023-08-27T21:50:31.069Z",
+        "updated_at": "2023-08-27T08:44:14.417Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "180e292c-1f48-4d8f-990b-76fc89617a05",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "address": "456 Elm Ave",
+        "city": "Los Angeles",
+        "country": "Canada",
+        "phone": "555-5678",
+        "created_at": "2023-08-28T02:44:08.783Z",
+        "updated_at": "2023-08-28T03:47:46.537Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "9d9d484d-e2b8-452f-b66c-74cca7190aef",
+        "first_name": "Michael",
+        "last_name": "Johnson",
+        "address": "789 Oak Ln",
+        "city": "Chicago",
+        "country": "United Kingdom",
+        "phone": "555-9012",
+        "created_at": "2023-08-27T23:02:55.373Z",
+        "updated_at": "2023-08-27T19:01:41.883Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "815cd956-2182-47a3-9e05-02177ba4d3a3",
+        "first_name": "Sarah",
+        "last_name": "Wilson",
+        "address": "321 Pine Rd",
+        "city": "Houston",
+        "country": "Australia",
+        "phone": "555-3456",
+        "created_at": "2023-08-27T16:30:18.548Z",
+        "updated_at": "2023-08-28T03:13:35.277Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "4e41c56a-0b9b-4338-98ab-5d8160e78be0",
+        "first_name": "Robert",
+        "last_name": "Brown",
+        "address": "987 Maple Dr",
+        "city": "Miami",
+        "country": "Germany",
+        "phone": "555-7890",
+        "created_at": "2023-08-27T21:18:02.161Z",
+        "updated_at": "2023-08-27T08:37:50.297Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "fe7ab5f4-1b55-4bee-95a9-ba0df4c5928a",
+        "email": "Adolphus.Ziemann81@yahoo.com",
+        "firstName": "Norberto",
+        "lastName": "Jast",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/89717175",
+        "tenantId": null
+      },
+      {
+        "reference": "40299ecb-1a29-4781-b25f-2679d2295e8f",
+        "email": "Kirsten_VonRueden8@gmail.com",
+        "firstName": "Sophie",
+        "lastName": "Treutel",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1171.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "a9375e88-4c2e-4127-a6b7-f0b6118a0264",
+        "email": "Marlene.Corkery34@gmail.com",
+        "firstName": "Jerrell",
+        "lastName": "Morissette",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/389.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "8d1fb3c0-5b3c-4814-a7df-6ae39f1e7139",
+        "email": "Floyd.Sauer@hotmail.com",
+        "firstName": "Cathy",
+        "lastName": "Borer",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/24450349",
+        "tenantId": null
+      },
+      {
+        "reference": "fc33fd6e-3ad3-465e-89e0-8d3458337e7a",
+        "email": "Alford.Fritsch@gmail.com",
+        "firstName": "Wilton",
+        "lastName": "Ritchie",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/38174305",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "database_connection": [
+      {
+        "id": "95b9de55-8109-4684-bed0-0a4ef9cc8ab1",
+        "host": "localhost",
+        "port": 24557,
+        "database_name": "my_database",
+        "username": "admin",
+        "password": "p@ssw0rd",
+        "created_at": "2023-08-28T00:28:58.728Z",
+        "updated_at": "2023-08-27T19:48:31.667Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "58935448-306a-48f6-b9cd-cc2e98220242",
+        "host": "db.example.com",
+        "port": 52729,
+        "database_name": "company_db",
+        "username": "user",
+        "password": "securepassword",
+        "created_at": "2023-08-28T00:30:01.984Z",
+        "updated_at": "2023-08-27T15:28:16.074Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "5b1423b7-2203-40cf-a818-18dfe86d6a7a",
+        "host": "123.456.789.0",
+        "port": 93411,
+        "database_name": "test_db",
+        "username": "dbadmin",
+        "password": "12345678",
+        "created_at": "2023-08-27T08:11:31.072Z",
+        "updated_at": "2023-08-27T18:57:09.534Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "0dd61019-b1ec-48f6-96d1-2e8da7ed5d24",
+        "host": "dbserver.internal",
+        "port": 97753,
+        "database_name": "production_db",
+        "username": "developer",
+        "password": "db@dm1n",
+        "created_at": "2023-08-27T14:55:39.687Z",
+        "updated_at": "2023-08-27T21:27:06.312Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "897ab8ff-8b96-42e8-99e4-f34c5cc2d8c1",
+        "host": "database.company.com",
+        "port": 75570,
+        "database_name": "customer_data",
+        "username": "database_user",
+        "password": "password123",
+        "created_at": "2023-08-28T04:14:35.273Z",
+        "updated_at": "2023-08-27T18:24:08.071Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "table_structure": [
+      {
+        "id": "a07d6ce0-9082-4eb5-8c58-4bbdecd45af4",
+        "table_name": "users",
+        "field_name": "id",
+        "field_type": "integer",
+        "is_nullable": true,
+        "default_value": "NULL",
+        "created_at": "2023-08-27T16:56:55.857Z",
+        "updated_at": "2023-08-27T23:12:49.253Z",
+        "database_connection_id": "95b9de55-8109-4684-bed0-0a4ef9cc8ab1"
+      },
+      {
+        "id": "02f2b509-fb4a-4c35-99c7-35be9bebf838",
+        "table_name": "products",
+        "field_name": "name",
+        "field_type": "string",
+        "is_nullable": true,
+        "default_value": "0",
+        "created_at": "2023-08-27T06:52:08.585Z",
+        "updated_at": "2023-08-27T21:31:47.965Z",
+        "database_connection_id": "58935448-306a-48f6-b9cd-cc2e98220242"
+      },
+      {
+        "id": "5d3677cb-6164-4f98-baf1-450857c59a44",
+        "table_name": "orders",
+        "field_name": "email",
+        "field_type": "text",
+        "is_nullable": false,
+        "default_value": "N/A",
+        "created_at": "2023-08-27T13:47:28.867Z",
+        "updated_at": "2023-08-27T12:35:39.712Z",
+        "database_connection_id": "897ab8ff-8b96-42e8-99e4-f34c5cc2d8c1"
+      },
+      {
+        "id": "400d2cb9-b5cf-440c-a5d4-634982730134",
+        "table_name": "customers",
+        "field_name": "address",
+        "field_type": "boolean",
+        "is_nullable": false,
+        "default_value": "true",
+        "created_at": "2023-08-27T07:19:32.461Z",
+        "updated_at": "2023-08-27T11:43:53.422Z",
+        "database_connection_id": "95b9de55-8109-4684-bed0-0a4ef9cc8ab1"
+      },
+      {
+        "id": "802f8adb-6229-4d0f-8d93-5039f91f2421",
+        "table_name": "invoices",
+        "field_name": "phone",
+        "field_type": "datetime",
+        "is_nullable": true,
+        "default_value": "2021-01-01",
+        "created_at": "2023-08-28T03:08:32.798Z",
+        "updated_at": "2023-08-27T13:42:02.676Z",
+        "database_connection_id": "897ab8ff-8b96-42e8-99e4-f34c5cc2d8c1"
+      }
+    ],
+    "form": [
+      {
+        "id": "4145285a-4b41-4a8f-8503-4ff8cc194a91",
+        "form_type": "contact",
+        "created_at": "2023-08-27T13:23:35.013Z",
+        "updated_at": "2023-08-28T03:11:42.065Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "02f2b509-fb4a-4c35-99c7-35be9bebf838"
+      },
+      {
+        "id": "d610603d-4ecd-4227-a373-ce8ef9a825ae",
+        "form_type": "registration",
+        "created_at": "2023-08-27T10:51:07.568Z",
+        "updated_at": "2023-08-28T01:03:14.071Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "a07d6ce0-9082-4eb5-8c58-4bbdecd45af4"
+      },
+      {
+        "id": "d397c53b-83de-4095-8988-423ea93443d1",
+        "form_type": "feedback",
+        "created_at": "2023-08-28T00:03:34.500Z",
+        "updated_at": "2023-08-27T22:24:04.291Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "a07d6ce0-9082-4eb5-8c58-4bbdecd45af4"
+      },
+      {
+        "id": "310692d2-97c1-4492-be91-53e0da7d32b7",
+        "form_type": "survey",
+        "created_at": "2023-08-27T20:38:09.357Z",
+        "updated_at": "2023-08-27T10:22:14.909Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "a07d6ce0-9082-4eb5-8c58-4bbdecd45af4"
+      },
+      {
+        "id": "58b6d777-e403-4734-8f24-8d809ac2e891",
+        "form_type": "order",
+        "created_at": "2023-08-28T03:15:58.061Z",
+        "updated_at": "2023-08-27T11:52:58.264Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "400d2cb9-b5cf-440c-a5d4-634982730134"
+      }
+    ],
+    "customer": [
+      {
+        "id": "a73cb312-dddd-47da-a82e-6b744e162c38",
+        "first_name": "John",
+        "last_name": "Doe",
+        "address": "123 Main St",
+        "city": "New York",
+        "country": "United States",
+        "phone": "123-456-7890",
+        "created_at": "2023-08-27T20:10:25.911Z",
+        "updated_at": "2023-08-28T00:42:17.468Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "fc002045-735c-4d47-9715-4d0ec08e0554",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "address": "456 Elm Ave",
+        "city": "Los Angeles",
+        "country": "Canada",
+        "phone": "555-123-4567",
+        "created_at": "2023-08-27T13:56:34.461Z",
+        "updated_at": "2023-08-27T23:58:17.877Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "ad83c4e0-5b68-4f66-ab8f-705eaad2654f",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "address": "789 Oak Ln",
+        "city": "Chicago",
+        "country": "United Kingdom",
+        "phone": "9876543210",
+        "created_at": "2023-08-28T03:58:16.806Z",
+        "updated_at": "2023-08-27T18:20:18.732Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "c7c50722-17b2-44d1-b98f-93e4a9238599",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "address": "321 Pine Rd",
+        "city": "Houston",
+        "country": "Australia",
+        "phone": "876-543-2109",
+        "created_at": "2023-08-27T22:40:20.990Z",
+        "updated_at": "2023-08-27T11:32:33.309Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "b2a85914-e23b-44cf-8395-cef37144ee4c",
+        "first_name": "Robert",
+        "last_name": "Wilson",
+        "address": "987 Maple Dr",
+        "city": "Miami",
+        "country": "Germany",
+        "phone": "321-654-0987",
+        "created_at": "2023-08-27T08:12:15.295Z",
+        "updated_at": "2023-08-27T12:46:12.809Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "7f80d2de-4373-4315-895f-741a0126197a",
+        "email": "Myrna_Hickle@gmail.com",
+        "firstName": "Margarita",
+        "lastName": "Gerhold",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/86889933",
+        "tenantId": null
+      },
+      {
+        "reference": "dab8e1dc-0746-4b39-8941-8332d62ad2c7",
+        "email": "Vickie_Cartwright20@hotmail.com",
+        "firstName": "Alfredo",
+        "lastName": "Frami",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/159.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "276d725e-9a07-4fa9-967d-26ea48de2182",
+        "email": "Sophie_Denesik4@hotmail.com",
+        "firstName": "Zetta",
+        "lastName": "Murazik",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73627546",
+        "tenantId": null
+      },
+      {
+        "reference": "66daa637-d8a9-4d75-b400-6cd0217080ee",
+        "email": "Elnora.OConner63@yahoo.com",
+        "firstName": "Jeramy",
+        "lastName": "Swift",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/837.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "a3e48391-6b8e-46e2-b68b-945600bb33c6",
+        "email": "Jeanie65@gmail.com",
+        "firstName": "Webster",
+        "lastName": "Wilderman",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/58176017",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "database_connection": [
+      {
+        "id": "a6d7165e-7cc6-45a7-bac9-3fbfbcf4c54f",
+        "host": "localhost",
+        "port": 83617,
+        "database_name": "mydb",
+        "username": "admin",
+        "password": "p@ssw0rd",
+        "created_at": "2023-08-28T05:21:54.617Z",
+        "updated_at": "2023-08-28T03:14:37.153Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "02b58135-084b-4a8c-a777-47b775c204ac",
+        "host": "db.example.com",
+        "port": 94900,
+        "database_name": "testdb",
+        "username": "user",
+        "password": "secret123",
+        "created_at": "2023-08-27T07:17:38.853Z",
+        "updated_at": "2023-08-28T04:15:53.372Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "723fbdf2-3125-46a6-a576-bfc71f590629",
+        "host": "123.45.67.89",
+        "port": 43582,
+        "database_name": "companydb",
+        "username": "dbadmin",
+        "password": "securepwd",
+        "created_at": "2023-08-27T18:01:55.773Z",
+        "updated_at": "2023-08-27T14:14:25.933Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "f405a095-d293-4ff7-a5cf-6418d1488fe8",
+        "host": "database-server",
+        "port": 52295,
+        "database_name": "customerdb",
+        "username": "appuser",
+        "password": "mypassword",
+        "created_at": "2023-08-28T05:54:06.675Z",
+        "updated_at": "2023-08-28T05:51:13.222Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "9d33af09-9562-49d8-b8d7-b90f251889a2",
+        "host": "db-prod",
+        "port": 31554,
+        "database_name": "productdb",
+        "username": "developer",
+        "password": "password1",
+        "created_at": "2023-08-27T11:18:10.471Z",
+        "updated_at": "2023-08-27T12:30:28.782Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "table_structure": [
+      {
+        "id": "47db9845-dcb2-486a-b65a-83ef5f895fa6",
+        "table_name": "users",
+        "field_name": "id",
+        "field_type": "integer",
+        "is_nullable": true,
+        "default_value": "NULL",
+        "created_at": "2023-08-27T12:59:53.701Z",
+        "updated_at": "2023-08-27T21:59:05.332Z",
+        "database_connection_id": "723fbdf2-3125-46a6-a576-bfc71f590629"
+      },
+      {
+        "id": "8e64a17a-000b-4eeb-ab25-b3ea7fa1a278",
+        "table_name": "orders",
+        "field_name": "name",
+        "field_type": "text",
+        "is_nullable": false,
+        "default_value": "0",
+        "created_at": "2023-08-27T10:24:58.426Z",
+        "updated_at": "2023-08-27T15:00:13.907Z",
+        "database_connection_id": "f405a095-d293-4ff7-a5cf-6418d1488fe8"
+      },
+      {
+        "id": "97a3e33c-9f8a-4e6c-9313-c07860a8fe5a",
+        "table_name": "products",
+        "field_name": "email",
+        "field_type": "boolean",
+        "is_nullable": false,
+        "default_value": "N/A",
+        "created_at": "2023-08-27T08:12:07.797Z",
+        "updated_at": "2023-08-28T03:14:41.937Z",
+        "database_connection_id": "a6d7165e-7cc6-45a7-bac9-3fbfbcf4c54f"
+      },
+      {
+        "id": "14128278-4efb-4f45-87af-f54d2d634a2e",
+        "table_name": "customers",
+        "field_name": "address",
+        "field_type": "datetime",
+        "is_nullable": false,
+        "default_value": "current_timestamp",
+        "created_at": "2023-08-27T07:44:27.150Z",
+        "updated_at": "2023-08-27T23:20:30.468Z",
+        "database_connection_id": "9d33af09-9562-49d8-b8d7-b90f251889a2"
+      },
+      {
+        "id": "6cdf7b5a-6f62-41fa-b8a9-892deb73ec34",
+        "table_name": "invoices",
+        "field_name": "phone",
+        "field_type": "float",
+        "is_nullable": false,
+        "default_value": "1.0",
+        "created_at": "2023-08-28T06:21:03.814Z",
+        "updated_at": "2023-08-27T14:27:38.915Z",
+        "database_connection_id": "02b58135-084b-4a8c-a777-47b775c204ac"
+      }
+    ],
+    "form": [
+      {
+        "id": "4a13d060-17b5-4eed-b0ee-afaaab719587",
+        "form_type": "contact",
+        "created_at": "2023-08-28T05:17:32.312Z",
+        "updated_at": "2023-08-27T22:37:36.969Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "8e64a17a-000b-4eeb-ab25-b3ea7fa1a278"
+      },
+      {
+        "id": "8cb5726c-a5c7-4965-8cca-f8c312bdd1a5",
+        "form_type": "registration",
+        "created_at": "2023-08-28T01:50:46.832Z",
+        "updated_at": "2023-08-27T22:32:33.851Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "97a3e33c-9f8a-4e6c-9313-c07860a8fe5a"
+      },
+      {
+        "id": "9ac1205b-baff-4309-9505-4025c19a2c92",
+        "form_type": "feedback",
+        "created_at": "2023-08-27T09:30:15.647Z",
+        "updated_at": "2023-08-27T20:45:26.195Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "47db9845-dcb2-486a-b65a-83ef5f895fa6"
+      },
+      {
+        "id": "c2d3ba22-b91d-44d0-86b5-5dc4992c46d9",
+        "form_type": "survey",
+        "created_at": "2023-08-27T11:34:50.859Z",
+        "updated_at": "2023-08-28T04:24:46.453Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "97a3e33c-9f8a-4e6c-9313-c07860a8fe5a"
+      },
+      {
+        "id": "a34381d4-69f9-4012-8767-ec9441bb1cdc",
+        "form_type": "order",
+        "created_at": "2023-08-27T13:19:56.425Z",
+        "updated_at": "2023-08-27T08:48:47.877Z",
+        "company_id": "main_entity_pk",
+        "table_structure_id": "6cdf7b5a-6f62-41fa-b8a9-892deb73ec34"
+      }
+    ],
+    "customer": [
+      {
+        "id": "2bebbde7-2f2c-44a8-97ed-8964f114cd93",
+        "first_name": "John",
+        "last_name": "Doe",
+        "address": "123 Main St",
+        "city": "New York",
+        "country": "United States",
+        "phone": "555-1234",
+        "created_at": "2023-08-27T21:27:32.356Z",
+        "updated_at": "2023-08-28T01:42:03.190Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "4dfc5011-52b9-4ac2-9d06-78c62d8d3007",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "address": "456 Elm St",
+        "city": "Los Angeles",
+        "country": "Canada",
+        "phone": "555-5678",
+        "created_at": "2023-08-27T08:20:06.761Z",
+        "updated_at": "2023-08-27T19:15:57.460Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "3422e40e-139c-44d3-9c28-434cba844e9c",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "address": "789 Oak Ave",
+        "city": "Chicago",
+        "country": "United Kingdom",
+        "phone": "555-9012",
+        "created_at": "2023-08-27T15:47:11.324Z",
+        "updated_at": "2023-08-27T23:34:46.807Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "601c8b71-41fa-4a8a-b5c3-a02d5e0fa57b",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "address": "321 Pine Rd",
+        "city": "Houston",
+        "country": "Australia",
+        "phone": "555-3456",
+        "created_at": "2023-08-27T17:25:26.305Z",
+        "updated_at": "2023-08-27T09:04:50.817Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "1f55b2d9-7fb2-49b2-b701-bf385091e5b0",
+        "first_name": "Robert",
+        "last_name": "Wilson",
+        "address": "987 Maple Ln",
+        "city": "Miami",
+        "country": "Germany",
+        "phone": "555-7890",
+        "created_at": "2023-08-27T15:14:56.976Z",
+        "updated_at": "2023-08-27T09:26:13.680Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "efeb0e3b-9f5c-4c69-b6f1-ba0f065d3679",
+        "email": "Lauretta.Buckridge@yahoo.com",
+        "firstName": "Bianka",
+        "lastName": "Stiedemann",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/84810401",
+        "tenantId": null
+      },
+      {
+        "reference": "6bb6775c-4104-44fe-ae27-5b402b70652d",
+        "email": "Gabriella_Harris@gmail.com",
+        "firstName": "Frida",
+        "lastName": "Ebert",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/738.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "8845c400-8f4d-48e7-9256-1f82fdd408e6",
+        "email": "Wava_Dare@hotmail.com",
+        "firstName": "Samantha",
+        "lastName": "Walker",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/16646604",
+        "tenantId": null
+      },
+      {
+        "reference": "10e3213f-dd1d-48b3-8475-71b123382cf1",
+        "email": "Eldon_Klocko94@hotmail.com",
+        "firstName": "Kaleigh",
+        "lastName": "Labadie",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/6349253",
+        "tenantId": null
+      },
+      {
+        "reference": "4d7e9239-c6dc-48dd-baab-367f0c24a852",
+        "email": "Kade21@gmail.com",
+        "firstName": "Nicholaus",
+        "lastName": "Gislason-Gerlach",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/37798891",
+        "tenantId": null
+      }
+    ]
+  }
+]

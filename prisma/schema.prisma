@@ -1,0 +1,89 @@
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["clientExtensions", "postgresqlExtensions"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  extensions      = [pgcrypto]
+}
+
+model company {
+  id                  String                @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  description         String?               @db.VarChar(255)
+  name                String                @db.VarChar(255)
+  created_at          DateTime              @default(now()) @db.Timestamp(6)
+  updated_at          DateTime              @default(now()) @db.Timestamp(6)
+  user_id             String                @db.Uuid
+  tenant_id           String                @db.VarChar(255)
+  user                user                  @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  customer            customer[]
+  database_connection database_connection[]
+  form                form[]
+}
+
+model customer {
+  id         String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  first_name String   @db.VarChar(255)
+  last_name  String   @db.VarChar(255)
+  address    String   @db.VarChar(255)
+  city       String   @db.VarChar(255)
+  country    String   @db.VarChar(255)
+  phone      String   @db.VarChar(255)
+  company_id String   @db.Uuid
+  created_at DateTime @default(now()) @db.Timestamp(6)
+  updated_at DateTime @default(now()) @db.Timestamp(6)
+  company    company  @relation(fields: [company_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model database_connection {
+  id              String            @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  host            String            @db.VarChar(255)
+  port            Int
+  database_name   String            @db.VarChar(255)
+  username        String            @db.VarChar(255)
+  password        String            @db.VarChar(255)
+  company_id      String            @db.Uuid
+  created_at      DateTime          @default(now()) @db.Timestamp(6)
+  updated_at      DateTime          @default(now()) @db.Timestamp(6)
+  company         company           @relation(fields: [company_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  table_structure table_structure[]
+}
+
+model form {
+  id                 String          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  form_type          String          @db.VarChar(255)
+  table_structure_id String          @db.Uuid
+  company_id         String          @db.Uuid
+  created_at         DateTime        @default(now()) @db.Timestamp(6)
+  updated_at         DateTime        @default(now()) @db.Timestamp(6)
+  company            company         @relation(fields: [company_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  table_structure    table_structure @relation(fields: [table_structure_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model table_structure {
+  id                     String              @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  table_name             String              @db.VarChar(255)
+  field_name             String              @db.VarChar(255)
+  field_type             String              @db.VarChar(255)
+  is_nullable            Boolean
+  default_value          String?             @db.VarChar(255)
+  database_connection_id String              @db.Uuid
+  created_at             DateTime            @default(now()) @db.Timestamp(6)
+  updated_at             DateTime            @default(now()) @db.Timestamp(6)
+  form                   form[]
+  database_connection    database_connection @relation(fields: [database_connection_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model user {
+  id          String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  email       String    @unique @db.VarChar(255)
+  firstName   String?   @db.VarChar(255)
+  lastName    String?   @db.VarChar(255)
+  roq_user_id String    @db.VarChar(255)
+  tenant_id   String    @db.VarChar(255)
+  created_at  DateTime  @default(now()) @db.Timestamp(6)
+  updated_at  DateTime  @default(now()) @db.Timestamp(6)
+  company     company[]
+}
